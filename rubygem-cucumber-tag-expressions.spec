@@ -3,7 +3,7 @@
 
 Name: rubygem-%{gem_name}
 Version: 4.0.0
-Release: 1%{?dist}
+Release: 1.1%{?dist}
 Summary: cucumber-tag-expressions-4.0.0
 License: MIT
 URL: https://cucumber.io/docs/cucumber/api/#tag-expressions
@@ -11,10 +11,11 @@ Source0: https://rubygems.org/gems/%{gem_name}-%{version}.gem
 BuildRequires: ruby(release)
 BuildRequires: rubygems-devel
 BuildRequires: ruby >= 1.9.3
-# BuildRequires: rubygem(rspec) >= 3.10
-# BuildRequires: rubygem(rspec) < 4
-# BuildRequires: rubygem(rspec) >= 3.10.0
+BuildRequires: rubygem(rspec)
 BuildArch: noarch
+
+Provides: rubygem(cucumber-tag_expressions) = %{version}-%{release}
+Obsoletes: rubygem(cucumber-tag_expressions) < 2.0.2-5
 
 %description
 Cucumber tag expressions for ruby.
@@ -48,7 +49,7 @@ cp -a .%{gem_dir}/* \
 
 %check
 pushd .%{gem_instdir}
-# rspec spec
+rspec spec
 popd
 
 %files
