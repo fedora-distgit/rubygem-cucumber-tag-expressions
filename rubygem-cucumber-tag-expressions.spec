@@ -15,7 +15,7 @@ BuildRequires: rubygem(rspec)
 BuildArch: noarch
 
 Provides: rubygem-cucumber-tag_expressions = %{version}-%{release}
-Obsoletes: rubygem-cucumber-tag_expressions < 2.0.2-5
+Obsoletes: rubygem-cucumber-tag_expressions < 2.0.2-10
 
 %description
 Cucumber tag expressions for ruby.
