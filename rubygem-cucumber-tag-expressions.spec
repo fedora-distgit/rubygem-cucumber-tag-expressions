@@ -2,9 +2,9 @@
 %global gem_name cucumber-tag-expressions
 
 Name: rubygem-%{gem_name}
-Version: 4.0.0
-Release: 1.1%{?dist}
-Summary: cucumber-tag-expressions-4.0.0
+Version: 4.0.2
+Release: 1%{?dist}
+Summary: Cucumber tag expressions for ruby
 License: MIT
 URL: https://cucumber.io/docs/cucumber/api/#tag-expressions
 Source0: https://rubygems.org/gems/%{gem_name}-%{version}.gem
@@ -65,5 +65,34 @@ popd
 %{gem_instdir}/spec
 
 %changelog
-* Thu Sep 09 2021 Jarek Prokop <jprokop@redhat.com> - 4.0.0-1
+* Mon Oct 04 2021 Jarek Prokop <jprokop@redhat.com> - 4.0.2-1
+- Rename rubygem-cucumber-tag_expressions to rubygem-cucumber-tag-expressions
+- Upgrade to 4.0.2
+
+* Fri Jul 23 2021 Fedora Release Engineering <releng@fedoraproject.org> - 2.0.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
+* Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 2.0.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
+
+* Sat Aug 22 2020 jackorp <jar.prokop@volny.cz> - 2.0.2-2
+- Fix homepage and shebang in bin/cucumber-tag-expressions.
+
+* Sat Aug 22 01:14:34 GMT 2020 Pavel Valena <pvalena@redhat.com> - 2.0.2-1
+- Update to cucumber-tag_expressions 2.0.2.
+  Resolves: rhbz#1742043
+
+* Wed Jul 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.1.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
+
+* Thu Jan 30 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.1.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
+* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.1.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
+* Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.1.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
+* Tue Aug 07 2018 jackorp <jar.prokop@volny.cz> - 1.1.1-1
 - Initial package
